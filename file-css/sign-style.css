@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/OIP\ \(4\).jpg");
+    background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+}
+/* small */
+@media(min-width:768px){
+    .container{
+        width: 500px;
+    }
+}
+/* medium */
+@media(min-width:992px){
+    .container{
+        width: 500px;
+    }
+}
+/* large */
+@media(min-width:1200px){
+    .container{
+        width: 500px;
+    }
+}
+.container{
+    position: absolute;
+    left:calc(50% - 286px);
+    height: 500px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid 0;
+    transition: 0.5s ease;
+    padding: 0 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,.2);
+}
+.container::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 50px;
+    transform: rotate(-10deg);
+    z-index: -1;
+    inset: 0;
+}
+.container:hover{
+    box-shadow: 9px 9px 150px blue;
+}
+.container .in-text{
+    margin: 25px 0;
+}
+.in-text i{
+    position: absolute;
+    padding: 10px 0 0 7px;
+}
+.container .in-pass{
+    margin: 16px 0;
+    padding-bottom: 30px;
+}
+.in-pass i{
+    position: absolute;
+    padding: 10px 0 0 7px;
+}
+.container .text,
+.password{
+/* width: 100%; */
+width: calc(100% - 15%);
+box-sizing: border-box;
+padding: 10px 0;
+font-size: 16px;
+border: none;
+padding-left: 30px;
+border-bottom: 2px solid rgb(171, 171, 245);
+outline: none;
+}
+h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+.logo img{
+    width: 80px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.container button{
+    width: 200px;
+    height: 50px;
+    color: rgb(171, 171, 245);
+    letter-spacing: 2px;
+    background-color: black;
+    border-radius: 100px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.container a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    float: left;
+    gap: 7px;
+    
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.end span , p{
+    cursor: pointer;
+}
+
+.end span:hover{
+    color: blue;
+}
+.container input{
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    margin-top: 1px;
+    font-size:50px;
+    
+}
+h1 span{
+    font-size: 75px;
+    color: rgb(171, 171, 245);
+
+}
+footer{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: auto;
+    
+}
+#one,#two,#three{
+    padding-left:40px ;
+    letter-spacing: 2px;
+    display: flex;
+}
